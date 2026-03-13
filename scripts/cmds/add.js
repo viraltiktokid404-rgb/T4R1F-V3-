@@ -4,7 +4,7 @@ module.exports = {
     version: "5.2",
     author: "AHMED TARIF",
     role: 0
-    countDown:5,
+    countDown: 5,
     prefixRequired: true,
     premium: true,
     description: "${prefix}add uid or message reply",
