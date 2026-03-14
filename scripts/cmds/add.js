@@ -3,7 +3,7 @@ module.exports = {
     name: "add",
     version: "5.2",
     author: "AHMED TARIF",
-    role: 0
+    role: 0,
     countDown:5,
     prefixRequired: true,
     premium: true,
@@ -15,14 +15,14 @@ module.exports = {
   onStart: async function ({ api, event, args }) {
     const send = m => api.sendMessage(m, event.threadID, event.messageID);
     const uid = args[0] || event.messageReply?.senderID;
-    if (!uid) return send("⚠️ Example: /add <uid> or reply to a user's message");
+    if (!uid) return send("⚠ Example: /add <uid> or reply to a user's message");
 
     try {
       const info = await api.getThreadInfo(event.threadID);
       const isBotAdmin = info.adminIDs.some(i => i.id == api.getCurrentUserID());
       if (!isBotAdmin) {
         const link = await api.getThreadInviteLink(event.threadID);
-        return send(`⚠️ Bot isn't admin.\n🔗 Invite manually:\n${link}`);
+        return send(`⚠ Bot isn't admin.\n🔗 Invite manually:\n${link}`);
       }
 
       api.addUserToGroup(uid, event.threadID, err =>
