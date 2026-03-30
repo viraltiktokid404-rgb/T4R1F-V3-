@@ -11,16 +11,16 @@
 
   "antiInbox": false,
   "language": "en",
-  "nickNameBot": "GoatBot",
+  "nickNameBot": "ANISHA-BOT",
   "prefix": "!",
 
-  "api": "https://www.noobs-api.rf.gd/dipto",
+  "api": "https://api.noobs-api.rf.gd/dipto",
 
   "approval": false,
 
   "reactBy": {
-    "delete": ["🗑️", "❌", "😠", "😡", "😾"],
-    "kick": ["👟", "🦵"]
+    "delete": ["🗑️","❌", "😠", "😡", "😾"],
+    "kick": ["🚯","🦶","🖕","🦵","🏌️‍♀️","🏌️‍♂️"]
   },
 
   "adminOnly": {
@@ -48,13 +48,11 @@
   "VIP": [
     "61552422054139",
     "100002652020549"
-
   ],
 
   "GOD": [
     "100002652020549",
-		"61552422054139"
-
+	"61552422054139"
   ],
 
   "T4R1F": [
