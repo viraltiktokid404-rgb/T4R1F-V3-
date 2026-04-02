@@ -7,7 +7,7 @@ module.exports = {
     author: "AHMED TARIF",
     countDown: 5,
     role: 0,
-	noPrefix: true,
+    noPrefix: true,
     shortDescription: "Send bot script",
     longDescription: "Send bot specified file ",
     category: "Owner",
@@ -22,12 +22,12 @@ module.exports = {
  return;
 			}
     if (!fileName) {
-      return api.sendMessage("👨🏿‍🌾| 𝐏𝐥𝐞𝐚𝐬𝐞 𝐩𝐫𝐨𝐯𝐢𝐝𝐞 𝐚 𝐟𝐢𝐥𝐞 𝐧𝐚𝐦𝐞?", event.threadID, event.messageID);
+      return api.sendMessage("👨🏿‍🔧| 𝐏𝐥𝐞𝐚𝐬𝐞 𝐩𝐫𝐨𝐯𝐢𝐝𝐞 𝐚 𝐟𝐢𝐥𝐞 𝐧𝐚𝐦𝐞?", event.threadID, event.messageID);
     }
 
     const fileT4R1F = __dirname + `/${fileName}.js`;
     if (!fs.existsSync(fileT4R1F)) {
-      return api.sendMessage(`File not found: ${fileName}.js`, event.threadID, event.messageID);
+      return api.sendMessage(`👨🏿‍🔧| File not found: ${fileName}.js`, event.threadID, event.messageID);
     }
 
     const fileContent = fs.readFileSync(fileT4R1F, 'utf8');
